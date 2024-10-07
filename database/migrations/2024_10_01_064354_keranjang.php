@@ -13,11 +13,12 @@ return new class extends Migration
     {
         Schema::create('keranjang', function (Blueprint $table) {
         $table->id();
-        $table->integer('nama_barang');
+        $table->string('nama_barang');
         $table->integer('harga');
         $table->integer('jumlah_barang');
         $table->integer('subtotal');
         $table->integer('id_penjualan');
+        $table->timestamps();
         });
     }
 

@@ -16,6 +16,7 @@ return new class extends Migration
         $table->string('nama_pelanggan');
         $table->date('tanggal');
         $table->integer('id_pelanggan');
+        $table->timestamps();
         });
     }
 
